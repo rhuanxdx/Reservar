@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Zerando CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fundo-tela */
+
+html {
+    width: 98.8vw;
+    height: 75rem;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.747), rgba(20, 20, 20, 0.596)), url(/img/img5.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    height: 300rem;
+}
+
+/* Menu - Header - NavBar */
+
+header {
+    width: 100%;
+    height: 7rem;
+    background-color: rgba(22, 22, 22, 0.2);
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+
+.menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(9, 231, 231);
+    transition: all 1.5s ease; 
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+/* Centro - Conteudo Principal */
+
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.sobre {
+    margin-top: 10rem;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+ 
+}
+/* Textos conteudo principal */
+
+.primary-text {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+}
+
+/* Botões */
+
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btns button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button:hover {
+    color: rgb(251, 255, 0);
+    border: none;
+}
+
+.btns button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btns button:hover:before {
+    width: 100%;
+}
+
+.img{
+       position: absolute;
+       left: 1%; 
+       margin-top: -48.9%;
+       cursor: pointer;
+ }
+
+ .imgprincipal{
+    position: absolute;
+    padding-left: 5rem;
+ }
+
+ .texto{
+   text-align: right;
+    padding-right: 5rem;
+    color: black;
+    margin-top: 8rem;
+    font-size: 15px;
+   
+ }
+ /* .rhuan {
+    position: absolute;
+    width: 25rem;
+    height: 12.5rem;
+    left: -9.125rem;
+    top: 200rem;
+}
+.nome4 {
+    position: absolute;
+    width: 15.188rem;
+    height: 6rem;
+    left: -3.75rem;
+    top: 212.5rem;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.retangulo4 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -2.5rem;
+    top: 215.625rem;
+
+    background: rgba(176, 255, 253, 0.4);
+    border-radius: 10px;
+}
+.insta4{
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -5.75rem;
+    top: 215.625rem;
+}
+.email4{
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: 1.125rem;
+    top: 215.625rem;
+}
+.linkedin4{
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -2.313rem;
+    top: 215.625rem;
+}
+
+.rafael {
+    position: absolute;
+    width: 25rem;
+    height: 12.5rem;
+    left: -27.875rem;
+    top: 200rem;
+}
+.nome3 {
+    position: absolute;
+    width: 15.188rem;
+    height: 6rem;
+    left: -23.20rem;
+    top:  212.5rem;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.retangulo3 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -21.875rem;
+    top: 215.625rem;
+
+    background: rgba(176, 255, 253, 0.4);
+    border-radius: 10px;
+}
+.insta3 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -25.107rem;
+    top: 215.625rem;
+}
+.email3 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -18.23rem;
+    top: 215.625rem;
+}
+.linkedin3 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -21.67rem;
+    top: 215.625rem;
+}
+
+.laysa {
+    position: absolute;
+    width: 25rem;
+    height: 12.5rem;
+    left: -46.625rem;
+    top: 200rem;
+}
+.nome2 {
+    position: absolute;
+    width: 15.188rem;
+    height: 6rem;
+    left: -41.875rem;
+    top:  212.5rem;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.retangulo2 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -40.313rem;
+    top: 215.625rem;
+
+    background: rgba(176, 255, 253, 0.4);
+    border-radius: 10px;
+}
+.insta2 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -43.563rem;
+    top: 215.625rem;
+}
+.email2 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -36.688rem;
+    top: 215.625rem;
+}
+.linkedin2 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -40.126rem;
+    top: 215.625rem;
+} */
+/* .desenvolvedores{
+    height: 10rem;
+    width: 10rem;
+}
+.gabriella {
+    position: absolute;
+    width: 25rem;
+    height: 12.5rem;
+    left: -66.375rem;
+    top: 200rem;
+}
+.nome1 {
+    position: absolute;
+    width: 15.188rem;
+    height: 6rem;
+    left: -62.5rem;
+    top:  212.5rem;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.retangulo1 {
+    position: absolute;
+    width: 12.5rem;
+    height: 3.125rem;
+    left: -61.25rem;
+    top: 215.625rem;
+
+    background: rgba(176, 255, 253, 0.4);
+    border-radius: 10px;
+}
+.linkedin1 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -61.063rem;
+    top: 215.625rem;
+}
+.insta1 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -64.5rem;
+    top: 215.625rem;
+}
+.email1 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -57.626rem;
+    top: 215.625rem;
+} */
+/* 
+.lucas {
+    position: absolute;
+    width: 25rem;
+    height: 12.5rem;
+    left: -46.625rem;
+    top: 225rem;
+}
+.nome5 {
+    position: absolute;
+    width: 15.188rem;
+    height: 6rem;
+    left: -41.875rem;
+    top: 237.5rem;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.retangulo5 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -40.313rem;
+    top: 240.625rem;
+
+    background: rgba(176, 255, 253, 0.4);
+    border-radius: 10px;
+}
+.insta5 {
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -43.563rem;
+    top: 240.625rem;
+}
+.linkedin5{
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -40.126rem;
+    top: 240.625rem;
+}
+.email5{
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -36.688rem;
+    top: 240.625rem;
+}
+
+.luis {
+    position: absolute;
+    width: 25rem;
+    height: 12.5rem;
+    left: -27.875rem;
+    top: 225rem;
+}
+.nome6{
+    position: absolute;
+    width: 15.188rem;
+    height: 6rem;
+    left: -23.125rem;
+    top: 237.5rem;
+    
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 61px;
+    text-align: center;
+    word-wrap: break-word;
+
+    color: #FFFFFF;
+}
+.retangulo6{
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -21.875rem;
+    top: 240.625rem;
+
+    background: rgba(176, 255, 253, 0.4);
+    border-radius: 10px;
+}
+.insta6{
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -25.107rem;
+    top: 240.625rem;
+}
+.linkedin6{
+    position: absolute;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -21.67rem;
+    top: 240.625rem;
+}
+.email6{
+    position: relative;
+    width: 12.063rem;
+    height: 3.125rem;
+    left: -18.23rem;
+    top: 240.625rem;
+} */
