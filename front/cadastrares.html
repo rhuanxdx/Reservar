@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./rodape.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type = "module" src="/front/cadastrarespaço.js" defer> </script>
+    <title>Reservar</title>
+
+<main>
+    <header>
+        <nav class="navigation">
+       
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Sobre</a></li>
+                <li class="nav-item"><a href="#">Agenda</a></li>
+                <li class="nav-item"><a href="#">Contato</a></li>
+            </ul>
+
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div id="menu">
+                <div id="logo">
+                    <img src="logo2-removebg-preview.png" alt="Logo do Site" class="logo">
+                </div> 
+        </nav>
+        
+        <script src="cabeçalho.js"></script>
+        
+    </header>
+    <body>
+    
+   
+
+        <div class="box">
+            <div class="img-box">
+                <img src="/img/img-formulario.png">
+            </div>
+            <div class="form-box">
+                <h2>Cadastrar Espaço Físico</h2>
+                
+                <form action="#">
+    
+                    <div class="input-group">
+                        <label for="nome">Nome</label>
+                        <input type="nome" id="nome" placeholder="Informe o nome da sala" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="descrição">Descrição</label>
+                        <input type="descrição" id="descrição" placeholder="Informe a descrição do espaço físico" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="numero_sala">Número da Sala</label>
+                        <input type="numero_sala" id="numero_sala" placeholder="Informe o número da Sala" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="capacidade">Capacidade</label>
+                        <input type="capacidade" id="capacidade" placeholder="Informe a capacidade do espaço físico" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="andar">Andar</label>
+                        <input type="andar" id="andar" placeholder="Informe o andar do espaço físico" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="predio">Prédio</label>
+                        <input type="predio" id="predio" placeholder="Informe o prédio do espaço físico" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="horariosDisponiveis">Horários Disponíveis</label>
+                        <input type="horariosDisponiveis" id="horarios_disponiveis" placeholder="Informe os Horários disponíveis" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="largura">Largura</label>
+                        <input type="largura" id="largura" placeholder="Informe a Largura do espaço físico" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="comprimento">Comprimento</label>
+                        <input type="comprimento" id="comprimento" placeholder="Informe o comprimento do espaço físico" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="area">Área</label>
+                        <input type="area" id="area" placeholder="Informe a área do espaço físico" required>
+                    </div>
+                    
+    
+                    <div class="input-group">
+                        <button>Cadastrar</button>
+                    </div>
+    
+                </form>
+            </div>
+    
+        </div>
+    </body>
+    
+    
+    
+    
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        background-image: url(background.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        min-height: 100vh;
+    }
+    .w50{
+        width: 50%;
+        float: left;
+        padding-right: 15px;
+    }
+    .box{
+        display: flex;
+        width: 930px;
+    }
+    .img-box{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px  0 0 20px;
+    }
+    .img-box img{
+        width: 100%;
+    }
+    .form-box{
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(40px);
+        padding: 30px 40px;
+        width: 50%;
+        border-radius: 0 20px 20px 0;
+    }
+    .form-box h2{
+        font-size: 30px;
+    }
+    .form-box p{
+        font-weight: bold;
+        color: #3D3D3D;
+    }
+    .form-box p a{
+        color: #3700ff;
+        text-decoration: none;
+    }
+    .form-box form{
+        margin: 20px 0;
+    }
+    form .input-group{
+        margin-bottom: 15px;
+    }
+    form .input-group label{
+        color: #3D3D3D;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    form .input-group input{
+        width: 100%;
+        height: 47px;
+        background-color: rgba(255, 255, 255, 0.32);
+        border-radius: 20px;
+        outline: none;
+        border: 2px solid transparent;
+        padding: 15px;
+        font-size: 15px;
+        color: #616161;
+        transition: all 0.4s ease;
+    }
+    form .input-group input:focus{
+        border-color: #4400ff69;
+    }
+    form .input-group button{
+        width: 100%;
+        height: 47px;
+        background: #3700ff;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        margin-top: 15px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    @media (max-width:930px) {
+        .img-box{
+            display: none;
+        }
+        .box{
+            width: 700px;
+        }
+        .form-box{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+    @media (max-width:500px) {
+        .w50{
+            width: 100%;
+            padding: 0;
+        }
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --red:#2f00ff;
+    --white:#fff;
+    --dark:#1e1c2a;
+}
+body{
+    color: var(--dark);
+    background: var(--white);
+    min-height: 100rem; 
+    
+}
+
+.logo {
+    max-width: 160px; 
+    height: auto;
+    position: absolute; 
+    top: 5px; 
+    right: 5px; 
+} 
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+}
+.navigation .logo{
+    color: var(--red);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--dark);
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navigation ul li a{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navigation ul li a:hover{
+    color: var(--red);
+}
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--red);
+}
+
+@media (max-width:785px) { 
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+}
+    
+    
+    </style>
+
+<footer class="rodape" id="contato">
+    <div class="rodape-div">
+ 
+        <div class="rodape-div-1">
+            <div class="rodape-div-1-coluna">
+           
+                <span><b>RESERVAR</b></span>
+                <p>Esse sistema faz parte do Projeto Interdisciplinar do CEFET-MG campus Leopoldina.</p>
+            </div>
+        </div>
+ 
+        <div class="rodape-div-2">
+            <div class="rodape-div-2-coluna">
+           
+                <span><b>Contatos</b></span>
+                <p>spacelab02023pi2gmail.com</p>
+                <p>ig: @reservar.cefetmg</p>
+            </div>
+        </div>
+ 
+        <div class="rodape-div-3">
+            <div class="rodape-div-3-coluna">
+            
+                <span><b>Links</b></span>
+                <p><a href="#">Desenvolvedores</a></p>
+                <p><a href="#">Sistema</a></p>
+                <p><a href="#">Sobre</a></p>
+            </div>
+        </div>
+ 
+        <div class="rodape-div-4">
+            <div class="rodape-div-4-coluna">
+              
+                <span><b>Outros</b></span>
+                <p>Políticas de Privacidade</p>
+            </div>
+        </div>
+ 
+    </div>
+    <p class="rodape-direitos">Copyright © 2023 – Todos os Direitos Reservados.</p>
+ </footer>
+ </main>
+ 
+ 
+ </div> 
+ </html>
