@@ -1,3 +1,16 @@
+
+// Cabeçalho
+
+const menu = document.querySelector('.menu');
+const NavMenu = document.querySelector('.nav-menu');
+
+menu.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+    NavMenu.classList.toggle('ativo');
+})
+
+// ----------
+
 import axios from 'https://cdn.jsdelivr.net/npm/axios@1.3.5/+esm';
 
 var form = document.querySelector("form");    
